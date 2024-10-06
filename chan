@@ -1,0 +1,23 @@
+import java.util.Stack;
+
+public class StackExample {
+    public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+
+        // Pushing 20 items onto the stack
+        for (int i = 1; i <= 20; i++) {
+            stack.push(i);
+        }
+
+        // Display stack before popping
+        System.out.println("Stack before popping: " + stack);
+
+        // Popping 5 items from the stack
+        for (int i = 0; i < 5; i++) {
+            stack.pop();
+        }
+
+        // Display stack after popping
+        System.out.println("Stack after popping: " + stack);
+    }
+}
